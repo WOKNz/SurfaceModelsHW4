@@ -12,4 +12,7 @@ if __name__ == "__main__":
 	# plt.plot(points_np[:, 0], points_np[:, 1], 'o', markersize=0.2)
 	# plt.savefig('testset4_sci.png', dpi=600)
 	trinagulation = Triangles.Triangulation(tri.simplices, points_np)
+	list = trinagulation.findAllTri(trinagulation.points[50],
+	                                trinagulation.points[80])
+	plt.axis('equal')
 	plt.show()
